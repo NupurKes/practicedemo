@@ -1,5 +1,4 @@
 import React from "react";
-import HomeButton from "./HomeButton";
 //import { NavLink } from "react-router-dom";
 import "./Header.css";
 import NavButton from "./NavButton";
@@ -18,9 +17,7 @@ function Header() {
 //   };
   return (
     <div>
-      <div>
-        <HomeButton />
-      </div>
+      
       {/* <NavLink>
         <button style={buttonStyle}>
           <p>Home</p>
