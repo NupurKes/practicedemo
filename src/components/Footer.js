@@ -1,7 +1,20 @@
 import React from 'react'
 
-export default function Footer() {
+const Footer = () =>{
+    let footerStyle ={
+      position: "fixed",
+      left: "0",
+      bottom: "0",
+      width: "100%",
+      backgroundColor: "#3f51b5",
+      color: "white",
+      textAlign: "center",
+   }
   return (
-    <div>Footer</div>
+    <footer style={footerStyle}>
+        <p>Copyright &copy; Profile.com</p>
+    </footer>
   )
 }
+
+export default Footer;
