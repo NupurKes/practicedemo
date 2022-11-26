@@ -37,7 +37,7 @@ function Header() {
           Home
         </NavLink> */}
         <NavButton to="/" label="Home" />
-        <NavLink
+        {/* <NavLink
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
           }
@@ -45,8 +45,9 @@ function Header() {
         >
           {" "}
           About
-        </NavLink>
-        <NavLink
+        </NavLink> */}
+        <NavButton to="/about" label="About" />
+        {/* <NavLink
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
           }
@@ -54,7 +55,8 @@ function Header() {
         >
           {" "}
           Contact
-        </NavLink>
+        </NavLink> */}
+        <NavButton to="/contact" label="Contact" />
       </nav>
     </div>
   );
