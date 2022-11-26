@@ -1,17 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import HomeButton from "./HomeButton";
+import { NavLink } from "react-router-dom";
+import "./Header.css";
+
 function Header() {
 return (
     <div>
     <div>
-<HomeButton />
-</div>
-<div>
-<Link to="/">Home</Link>
-<Link to="/about">About</Link>
-<Link to="/contact">Contact</Link>
-</div>
+        <HomeButton />
+      </div>
+      <div>
+      <NavLink
+className={({ isActive }) =>
+isActive ? "link-active" : "link-inactive" }
+to="/" > Home
+</NavLink>
+<NavLink
+className={({ isActive }) =>
+isActive ? "link-active" : "link-inactive" }
+to="/about" > About
+</NavLink>
+<NavLink
+className={({ isActive }) =>
+isActive ? "link-active" : "link-inactive" }
+to="/contact" > Contact
+</NavLink>
+      </div>
 </div>
 );
 }
