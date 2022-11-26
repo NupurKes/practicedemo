@@ -14,12 +14,12 @@ function NavButton(props) {
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
-    fontSize: "13px",
+    fontSize: "15px",
   };
   const activeButtonStyle = {
-    backgroundColor: "orange",
+    backgroundColor: "light blue",
     border: "none",
-    color: "black",
+    color: "red",
    // padding: "12px 12px",
     textAlign: "center",
     textDecoration: "none",
@@ -28,7 +28,7 @@ function NavButton(props) {
   };
   return (
     <NavLink to={props.to}>
-      <Button  variant="outlined" style={match ? activeButtonStyle : buttonStyle}>
+      <Button  variant="obtained" style={match ? activeButtonStyle : buttonStyle}>
         <p>{props.label}</p>
       </Button>
     </NavLink>

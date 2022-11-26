@@ -1,4 +1,5 @@
 import React from "react";
+
 //import { NavLink } from "react-router-dom";
 import "./Header.css";
 import NavButton from "./NavButton";
@@ -45,6 +46,8 @@ function Header() {
           About
         </NavLink> */}
         <NavButton to="/about" label="About" />
+        <NavButton to="/education" label="Education" />
+        <NavButton to="/hobbies" label="Hobbies" />
         {/* <NavLink
           className={({ isActive }) =>
             isActive ? "link-active" : "link-inactive"
