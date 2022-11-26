@@ -10,25 +10,25 @@ function NavButton(props) {
     //backgroundColor: "green",
     border: "none",
     color: "white",
-    padding: "10px 10px",
+    //padding: "8px 8px",
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
-    fontSize: "10px",
+    fontSize: "13px",
   };
   const activeButtonStyle = {
     backgroundColor: "orange",
     border: "none",
     color: "black",
-    padding: "12px 12px",
+   // padding: "12px 12px",
     textAlign: "center",
     textDecoration: "none",
     display: "inline-block",
-    fontSize: "11px",
+    fontSize: "15px",
   };
   return (
     <NavLink to={props.to}>
-      <Button  variant="contained" style={match ? activeButtonStyle : buttonStyle}>
+      <Button  variant="outlined" style={match ? activeButtonStyle : buttonStyle}>
         <p>{props.label}</p>
       </Button>
     </NavLink>
