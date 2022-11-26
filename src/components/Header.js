@@ -9,7 +9,7 @@ return (
     <div>
         <HomeButton />
       </div>
-      <div>
+      <nav>
       <NavLink
 className={({ isActive }) =>
 isActive ? "link-active" : "link-inactive" }
@@ -25,7 +25,7 @@ className={({ isActive }) =>
 isActive ? "link-active" : "link-inactive" }
 to="/contact" > Contact
 </NavLink>
-      </div>
+</nav>
 </div>
 );
 }
