@@ -12,7 +12,7 @@ const Footer = () =>{
    }
   return (
     <footer style={footerStyle}>
-        <p>Copyright &copy; Profile.com</p>
+        <p>Copyright &copy; Nupur.com</p>
     </footer>
   )
 }
